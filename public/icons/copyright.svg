@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>letter-c</title>
+<desc>Created with Sketch.</desc>
+<defs>
+<linearGradient id="d" x1="34.839%" x2="79.208%" y1="15.974%" y2="90.71%">
+<stop stop-color="#fff" stop-opacity=".4" offset="0"/>
+<stop stop-color="#fff" stop-opacity=".2" offset="1"/>
+</linearGradient>
+<circle id="b" cx="12" cy="12" r="12"/>
+<filter id="f" x="-156.2%" y="-156.2%" width="412.5%" height="412.5%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 5.73679768e-05   0 0 0 0 0.00814402248   0 0 0 0 0.097118433  0 0 0 0.0562172203 0"/>
+</filter>
+<linearGradient id="c" x1="10.422%" x2="82.218%" y1="10.3%" y2="81.947%">
+<stop stop-color="#AFB7C3" offset="0"/>
+<stop stop-color="#AFB6C3" stop-opacity="0" offset="1"/>
+</linearGradient>
+<path id="a" d="m12.644 20c-3.8038 0-6.6444-3.0028-6.6444-6.989 0-4.0083 2.8407-7.011 6.6444-7.011 3.2753 0 5.8118 2.3052 6.3197 5.6842h-3.4882c-0.42898-1.3667-1.5087-2.254-2.824-2.254-1.7695 0-3.0675 1.5173-3.0675 3.5807 0 2.0554 1.2979 3.5508 3.0675 3.5508 1.3866 0 2.4767-0.96348 2.8267-2.4444h3.5214c-0.47511 3.504-3.027 5.8825-6.3555 5.8825l-1.428e-4 1.523e-4z"/>
+<filter id="e" x="-50%" y="-39.3%" width="200%" height="192.9%">
+<feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12224104 0"/>
+</filter>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(-840 -1376)">
+<g transform="translate(864 1399)">
+<g transform="translate(0 1)">
+<use fill="black" filter="url(#f)" xlink:href="#b"/>
+<use fill="url(#d)" fill-rule="evenodd" xlink:href="#b"/>
+<path id="g" d="m17.111 7.812c-1.1325-1.141-3.6119-1.812-4.5367-1.812-2.7261 0-4.8414 1.4764-5.8616 3.6911-0.38831 0.84294-0.71283 1.7777-0.71283 2.801 0 1.8233 0.6859 3.4245 1.8338 4.578l6.9444 6.93c4.6812-0.9529 8.3231-4.6311 9.2219-9.3136l-6.8889-6.8744z" fill="url(#c)" fill-rule="nonzero" opacity=".49"/>
+<g fill-rule="nonzero">
+<use fill="black" filter="url(#e)" xlink:href="#a"/>
+<use fill="#FFFFFF" xlink:href="#a"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
