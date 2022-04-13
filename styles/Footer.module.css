@@ -1,0 +1,48 @@
+.footer {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  max-height: 15vh;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    283deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+}
+.socialIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+.socialIcons > a {
+  width: 80px;
+  height: auto;
+}
+.socialIcons > a > img {
+  height: 100%;
+  width: 100%;
+}
+.copyright {
+  position: relative;
+  font-family: var(--header-font);
+  color: white;
+  padding-bottom: 20px;
+}
+.copyright span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.copyright span img {
+  width: 100%;
+  height: auto;
+}

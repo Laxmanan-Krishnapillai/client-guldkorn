@@ -1,0 +1,119 @@
+.button,
+.header,
+.subHeader {
+  color: white;
+}
+.popupWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: linear-gradient(
+    315deg,
+    rgba(11, 49, 84, 1) 0%,
+    rgba(26, 96, 140, 1) 100%
+  );
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+.popup {
+  position: relative;
+  margin-top: 10vh;
+  opacity: 0.96;
+  width: 80vw;
+  height: 40vh;
+  border-radius: 15px;
+  background: linear-gradient(
+    315deg,
+    rgba(126, 190, 255, 0.2) 0%,
+    rgba(171, 201, 255, 0.4) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  border-radius: 20px;
+  border: none;
+  width: 300px;
+  color: white;
+  font-family: var(--header-font);
+  text-shadow: var(--base-text-shadow);
+  opacity: 85%;
+  background: var(--coming-button-color);
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.logoWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  overflow: hidden;
+  height: 75px;
+}
+.logoImg {
+  width: 100%;
+}
+.header {
+  font-family: var(--header-font);
+  font-size: 3rem;
+  text-align: center;
+}
+.subHeader {
+  font-family: var(--menu-font);
+  font-style: italic;
+  padding: 10px 0;
+  text-align: center;
+}
+.closeButton {
+  width: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.form input {
+  border-radius: 15px;
+  color: #5f5f5f;
+  box-shadow: 0 0 10px -5px black;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  padding: 7.5px 15px;
+  width: 100%;
+}
+.popup {
+  height: 70vh;
+}
+.popup .subHeader {
+  padding: 0 0 20px 0;
+}
+.popup .button {
+  margin-top: 10px;
+}
+/*Iphone screen*/
+@media only screen and (max-width: 500px) {
+  .button {
+    width: auto !important;
+  }
+  .popup {
+    width: 95vw;
+    height: 45vh;
+  }
+  .logoWrapper {
+    width: 150px;
+  }
+  .header {
+    font-size: 2rem;
+  }
+}

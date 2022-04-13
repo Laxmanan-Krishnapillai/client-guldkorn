@@ -4,6 +4,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.active {
+  display: flex;
+}
+.notActive {
+  display: none !important;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -21,10 +29,18 @@ a {
 }
 .list-wrapper {
   position: absolute;
-  width: 100%;
   background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 4px 0;
   box-shadow: var(--base-box-shadow);
-  height: 30px;
+  height: 38px;
+  border-radius: var(--base-br-radius);
+}
+.header-logo-wrapper {
+  max-width: 200px;
+  margin: 0 auto;
 }
 .list {
   width: 100%;
@@ -39,7 +55,7 @@ a {
 .list-items {
   height: 30px;
   overflow-y: hidden;
-  margin: auto 5px;
+  margin: 0 5px;
   background-color: #fff;
   box-shadow: var(--base-box-shadow);
   border-radius: var(--base-br-radius);
@@ -113,4 +129,9 @@ a {
     rgba(40, 165, 159, 1) 0%,
     rgba(17, 114, 97, 1) 100%
   );
+}
+.list-items:hover {
+  height: auto;
+}
+@media screen and (min-width: 746px) {
 }
