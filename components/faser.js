@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/faser.module.css";
+import styles from "../styles/Faser.module.css";
 export default function Faser() {
   return (
     <>
