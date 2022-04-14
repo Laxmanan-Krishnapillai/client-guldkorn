@@ -1,49 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.1" viewBox="0 0 129 129" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<title>Group 4</title>
-<desc>Created with Sketch.</desc>
-<defs>
-<linearGradient id="a" x1="34.839%" x2="79.208%" y1="15.974%" y2="90.71%">
-<stop stop-color="#fff" stop-opacity=".4" offset="0"/>
-<stop stop-color="#fff" stop-opacity=".2" offset="1"/>
-</linearGradient>
-<path id="d" d="m81 40.5c0-22.37-18.13-40.5-40.5-40.5s-40.5 18.13-40.5 40.5 18.13 40.5 40.5 40.5c0.2373 0 0.47461 0 0.71191-0.01582v-31.514h-8.7012v-10.141h8.7012v-7.4672c0-8.6537 5.284-13.368 13.004-13.368 3.702 0 6.8818 0.26895 7.7994 0.39551v9.0492h-5.3156c-4.1924 0-5.015 1.9934-5.015 4.9201v6.4547h10.046l-1.3131 10.141h-8.7328v29.979c16.928-4.8568 29.315-20.44 29.315-38.934z"/>
-<filter id="g" x="-46.3%" y="-46.3%" width="192.6%" height="192.6%">
-<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
-<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12.5"/>
-<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 5.73679768e-05   0 0 0 0 0.00814402248   0 0 0 0 0.097118433  0 0 0 0.0562172203 0"/>
-</filter>
-<path id="c" d="m81 40.5c0-22.37-18.13-40.5-40.5-40.5s-40.5 18.13-40.5 40.5 18.13 40.5 40.5 40.5c0.2373 0 0.47461 0 0.71191-0.01582v-31.514h-8.7012v-10.141h8.7012v-7.4672c0-8.6537 5.284-13.368 13.004-13.368 3.702 0 6.8818 0.26895 7.7994 0.39551v9.0492h-5.3156c-4.1924 0-5.015 1.9934-5.015 4.9201v6.4547h10.046l-1.3131 10.141h-8.7328v29.979c16.928-4.8568 29.315-20.44 29.315-38.934z"/>
-<filter id="f" x="-46.3%" y="-46.3%" width="192.6%" height="192.6%">
-<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
-<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12.5"/>
-<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 5.73679768e-05   0 0 0 0 0.00814402248   0 0 0 0 0.097118433  0 0 0 0.0562172203 0"/>
-</filter>
-<path id="b" d="m81 40.5c0-22.37-18.13-40.5-40.5-40.5s-40.5 18.13-40.5 40.5 18.13 40.5 40.5 40.5c0.2373 0 0.47461 0 0.71191-0.01582v-31.514h-8.7012v-10.141h8.7012v-7.4672c0-8.6537 5.284-13.368 13.004-13.368 3.702 0 6.8818 0.26895 7.7994 0.39551v9.0492h-5.3156c-4.1924 0-5.015 1.9934-5.015 4.9201v6.4547h10.046l-1.3131 10.141h-8.7328v29.979c16.928-4.8568 29.315-20.44 29.315-38.934z"/>
-<filter id="e" x="-46.3%" y="-46.3%" width="192.6%" height="192.6%">
-<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
-<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12.5"/>
-<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 5.73679768e-05   0 0 0 0 0.00814402248   0 0 0 0 0.097118433  0 0 0 0.0562172203 0"/>
-</filter>
-</defs>
-<g fill="none" fill-rule="evenodd">
-<g transform="translate(-801 -1266)">
-<g transform="translate(825 1290)">
-<g id="facebook">
-<g id="Path">
-<use fill="black" filter="url(#g)" xlink:href="#d"/>
-<use fill="url(#a)" fill-rule="evenodd" xlink:href="#d"/>
-</g>
-</g>
-<g id="h">
-<g id="i">
-<use fill="black" filter="url(#f)" xlink:href="#c"/>
-<use fill="url(#a)" fill-rule="evenodd" xlink:href="#c"/>
-</g>
-</g>
-<use fill="black" filter="url(#e)" xlink:href="#b"/>
-<use fill="url(#a)" fill-rule="evenodd" xlink:href="#b"/>
-</g>
-</g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="101" viewBox="0 0 101 101">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.348" y1="0.16" x2="0.792" y2="0.907" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="Path" x="0" y="0" width="101" height="101" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-color="#000219" flood-opacity="0.055"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path-2" x="0" y="0" width="101" height="101" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur-2"/>
+      <feFlood flood-color="#000219" flood-opacity="0.055"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path-3" x="0" y="0" width="101" height="101" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur-3"/>
+      <feFlood flood-color="#000219" flood-opacity="0.055"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Facebook" transform="translate(37.5 37.5)">
+    <g id="facebook-2" data-name="facebook">
+      <g transform="matrix(1, 0, 0, 1, -37.5, -37.5)" filter="url(#Path)">
+        <path id="Path-4" data-name="Path" d="M26,13A13,13,0,1,0,13,26c.076,0,.152,0,.229-.005V15.879H10.436V12.624h2.793v-2.4A3.911,3.911,0,0,1,17.4,5.936a22.688,22.688,0,0,1,2.5.127v2.9H18.2c-1.346,0-1.61.64-1.61,1.579v2.072h3.225l-.421,3.255h-2.8V25.5A13,13,0,0,0,26,13Z" transform="translate(37.5 37.5)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="facebook-3" data-name="facebook">
+      <g transform="matrix(1, 0, 0, 1, -37.5, -37.5)" filter="url(#Path-2)">
+        <path id="Path-5" data-name="Path" d="M26,13A13,13,0,1,0,13,26c.076,0,.152,0,.229-.005V15.879H10.436V12.624h2.793v-2.4A3.911,3.911,0,0,1,17.4,5.936a22.688,22.688,0,0,1,2.5.127v2.9H18.2c-1.346,0-1.61.64-1.61,1.579v2.072h3.225l-.421,3.255h-2.8V25.5A13,13,0,0,0,26,13Z" transform="translate(37.5 37.5)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="facebook-4" data-name="facebook">
+      <g transform="matrix(1, 0, 0, 1, -37.5, -37.5)" filter="url(#Path-3)">
+        <path id="Path-6" data-name="Path" d="M26,13A13,13,0,1,0,13,26c.076,0,.152,0,.229-.005V15.879H10.436V12.624h2.793v-2.4A3.911,3.911,0,0,1,17.4,5.936a22.688,22.688,0,0,1,2.5.127v2.9H18.2c-1.346,0-1.61.64-1.61,1.579v2.072h3.225l-.421,3.255h-2.8V25.5A13,13,0,0,0,26,13Z" transform="translate(37.5 37.5)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
 </svg>

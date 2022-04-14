@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="166" viewBox="0 0 450 166">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.045" y1="0.323" x2="0.792" y2="0.907" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-opacity="0.243"/>
+      <stop offset="1" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="sidefod_bar_" x="0" y="0" width="450" height="166" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-color="#000219" flood-opacity="0.118"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#sidefod_bar_)">
+    <path id="sidefod_bar_2" data-name="sidefod bar " d="M0,31.6S105.828,0,187.5,0,375,31.6,375,31.6V91H0Z" transform="translate(37.5 37.5)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
