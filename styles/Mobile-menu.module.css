@@ -5,9 +5,23 @@
   align-items: center;
   justify-content: start;
   height: 100vh;
-  background: url(/icons/Baggrund.svg) no-repeat center center fixed;
-  background-size: cover;
+  animation-delay: 1.2s;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(5, 15, 28, 1) 60%,
+    rgba(10, 9, 54, 1) 100%
+  );
   width: 100vw;
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .stars {
@@ -51,6 +65,6 @@
   color: #112e50;
 }
 
-.hidden {
+.notMobile {
   display: none;
 }
