@@ -4,20 +4,23 @@ import styles from "../styles/Footer.module.css";
 export default function Footer() {
   return (
     <div className={styles.footer}>
+      <div className={styles.background}>
+        <object data="/icons/mobile-footer-bg.svg"></object>
+      </div>
       <div className={styles.socialIcons}>
         <a href="#" className={styles.facebook}>
-          <Image src="/icons/facebook.svg" alt="facebook-logo" layout="fill" />
+          <object data="/icons/facebook.svg"></object>
         </a>
         <a href="#" className={styles.tiktok}>
-          <Image src="/icons/tiktok.svg" alt="facebook-logo" layout="fill" />
+          <object data="/icons/tiktok.svg"></object>
         </a>
         <a href="#" className={styles.instagram}>
-          <Image src="/icons/instagram.svg" layout="fill" alt="facebook-logo" />
+          <object data="/icons/instagram.svg"></object>
         </a>
       </div>
       <p className={styles.copyright}>
         <span>
-          <Image src="/icons/copyright.svg" alt="copyright" layout="fill" />
+          <object data="/icons/copyright.svg"></object>
         </span>
         2021 Guldkorn, ApS
       </p>

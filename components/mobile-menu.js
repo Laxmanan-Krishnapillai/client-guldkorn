@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "../styles/Mobile-menu.module.css";
 import { motion } from "framer-motion";
-export default function MobileMenu() {
+export default function MobileMenu(isMobile) {
   const [isOpen, setIsOpen] = useState(true);
   const variants = {
     open: { opacity: 1, y: 0 },
@@ -22,11 +22,14 @@ export default function MobileMenu() {
   };
   return (
     <>
-      <div className={styles.menuIcon} onClick={() => setIsOpen(!isOpen)}></div>
+      <div
+        className={`${styles.menuIcon} ${isMobile ? "" : styles.hidden}`}
+        onClick={() => setIsOpen(!isOpen)}
+      ></div>
       <motion.div
         animate={isOpen ? "open" : "closed"}
         variants={containerVariants}
-        className={`${styles.container}`}
+        className={`${styles.container} ${isMobile ? "" : styles.hidden}`}
       >
         <object
           className={styles.stars}

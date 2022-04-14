@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 export default function Home() {
   return (
     <>
-      <MobileMenu />
+      <MobileMenu isMobile={false} />
       <Footer />
     </>
   );

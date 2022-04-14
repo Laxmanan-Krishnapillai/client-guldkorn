@@ -65,6 +65,6 @@
   color: #112e50;
 }
 
-.notMobile {
-  display: none;
+.hidden {
+  display: none !important;
 }
