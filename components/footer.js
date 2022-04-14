@@ -4,9 +4,7 @@ import styles from "../styles/Footer.module.css";
 export default function Footer() {
   return (
     <div className={styles.footer}>
-      <div className={styles.background}>
-        <object data="/icons/mobile-footer-bg.svg"></object>
-      </div>
+      <div className={styles.background}></div>
       <div className={styles.socialIcons}>
         <a href="#" className={styles.facebook}>
           <object data="/icons/facebook.svg"></object>

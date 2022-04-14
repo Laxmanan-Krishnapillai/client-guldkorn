@@ -16,7 +16,7 @@ export default function Navbar() {
           className={`header-logo-img`}
         />
       </div>
-      <div className={`list-wrap per`}>
+      <div className={`list-wrapper`}>
         <ul className={`list`}>
           <li
             className={`list-items home ${

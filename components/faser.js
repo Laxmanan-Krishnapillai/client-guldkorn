@@ -4,57 +4,6 @@ import styles from "../styles/Faser.module.css";
 export default function Faser() {
   return (
     <>
-      <div className={styles.slideShowContainer}>
-        {/*Slideshow container*/}
-        <div className={styles.slidesContainer}>
-          {/*Full-width slides/quotes container*/}
-          <div className={styles.slide}>
-            <h2 className={styles.slideTitle}>AFLASTNING</h2>
-            <h3 className={styles.slideSubTitle}>John Keats</h3>
-            <p className={styles.slideDescription}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
-              repellat est doloremque voluptatum laborum suscipit in optio vero
-              nobis reprehenderitLorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Deleniti repellat est doloremque voluptatum
-              laborum suscipit in optio vero nobis voluptatum laborum suscipit
-              in optio vero nobis reprehenderit.
-            </p>
-          </div>
-
-          <div className={styles.slide}>
-            <h2 className={styles.slideTitle}>AFLASTNING</h2>
-            <h3 className={styles.slideSubTitle}>Ernest Hemingway</h3>
-            <p className={styles.slideDescription}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
-              repellat est doloremque voluptatum laborum suscipit in optio vero
-              nobis reprehenderitLorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Deleniti repellat est doloremque voluptatum
-              laborum suscipit in optio vero nobis voluptatum laborum suscipit
-              in optio vero nobis reprehenderit.
-            </p>
-          </div>
-
-          <div className={styles.slide}>
-            <h2 className={styles.slideTitle}>AFLASTNING</h2>
-            <h3 className={styles.slideSubTitle}>Thomas A. Edison</h3>
-            <p className={styles.slideDescription}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
-              repellat est doloremque voluptatum laborum suscipit in optio vero
-              nobis reprehenderitLorem ipsum dolor, sit amet consectetur
-              voluptatum laborum suscipit in optio vero nobis reprehenderit.
-            </p>
-          </div>
-        </div>
-        {/*Dots/bullets/indicators*/}
-        <div className={styles.dotContainer}>
-          <span className={styles.dot}></span>
-          <span className={styles.dot}></span>
-          <span className={styles.dot}></span>
-        </div>
-        {/*Next/prev buttons */}
-        <a className={styles.prev}>&#10094;</a>
-        <a className={styles.next}>&#10095;</a>
-      </div>
       <div className={styles.faser}>
         <div className={[styles.fase1, styles.current]}>
           <h3 className={styles.title}> 1</h3>

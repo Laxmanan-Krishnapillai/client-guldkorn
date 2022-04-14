@@ -3,9 +3,11 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "../styles/Mobile-menu.module.css";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 export default function MobileMenu(isMobile) {
   const [isOpen, setIsOpen] = useState(true);
+  const animation = useAnimation();
+
   const variants = {
     open: { opacity: 1, y: 0 },
     closed: { opacity: 0, y: "-50px" },
@@ -16,16 +18,27 @@ export default function MobileMenu(isMobile) {
       transition: {
         delay: 0,
         duration: 0.2,
+        when: "beforeChildren",
       },
     },
-    closed: { opacity: 0, transition: { delay: 0.5, duration: 0.2 } },
+  };
+
+  const menuIconVariants = {
+    open: {
+      rotate: [0, 90, 0],
+    },
+    closed: {
+      rotate: [0, -90, 0],
+    },
   };
   return (
     <>
-      <div
+      <motion.div
         className={`${styles.menuIcon} ${isMobile ? "" : styles.hidden}`}
         onClick={() => setIsOpen(!isOpen)}
-      ></div>
+        variants={menuIconVariants}
+        animate={isOpen ? "open" : "closed"}
+      ></motion.div>
       <motion.div
         animate={isOpen ? "open" : "closed"}
         variants={containerVariants}
@@ -36,16 +49,6 @@ export default function MobileMenu(isMobile) {
           type="image/svg+xml"
           data="/icons/stjerner.svg"
         ></object>
-        <div className={styles.logo}>
-          <Image
-            src="/icons/logo.png"
-            alt="logo"
-            width={1080}
-            height={488}
-            layout="responsive"
-            objectFit="contain"
-          />
-        </div>
         <div className={styles.menu}>
           {[
             ["Home", "/"],
