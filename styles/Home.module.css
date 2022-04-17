@@ -1,0 +1,21 @@
+.title {
+  font-family: var(--header-font);
+  font-size: 2rem;
+}
+.subTitle {
+  font-family: var(--menu-font);
+  font-weight: 100;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+.textContainer {
+  padding: 10px 5px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(3, 54, 76, 0.06) 100%
+  );
+  background-opacity: 0.06;
+}

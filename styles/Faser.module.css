@@ -1,10 +1,6 @@
 @import "variables.css";
 
 .contentWrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   background: linear-gradient(
     135deg,
     rgba(6, 9, 54, 1) 0%,
@@ -13,12 +9,8 @@
     rgba(5, 22, 51, 1) 75%,
     rgba(0, 0, 0, 1) 100%
   );
-  padding: 0 10px;
-  gap: 5vh;
-  width: 100vw;
-  border-radius: 0;
-  padding-top: 10vh;
 }
+
 .faser {
   flex-direction: column;
   width: 100%;
@@ -28,6 +20,7 @@
   justify-content: space-around;
   align-items: flex-start;
   gap: 20px;
+  padding: 0 10px;
 }
 .faser > div {
   display: flex;
@@ -88,6 +81,7 @@
   margin-top: 10px;
   gap: 15px;
   overflow-x: scroll;
+  padding: 0 10px;
   scroll-snap-type: x mandatory;
 }
 .slide {
@@ -153,13 +147,6 @@
     height: 100%;
     width: 195px;
     margin-bottom: 0;
-  }
-  .contentWrapper {
-    width: 90vw;
-    height: 80vh;
-    margin: 10vh 5vw 10vh 5vw;
-    border-radius: 15px;
-    justify-content: space-between;
   }
 }
 

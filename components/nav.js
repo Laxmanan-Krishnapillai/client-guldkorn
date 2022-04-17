@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useEffect } from "react";
 import { useRouter } from "next/router";
-export default function Navbar(props) {
+export default function Navbar({ dark, top }) {
   const listRef = useRef();
   const router = useRouter();
   useEffect(() => {
@@ -12,13 +12,16 @@ export default function Navbar(props) {
       }
     });
   }, []);
-
+  const test = (array) => {
+    if (array.some((char) => router.pathname.endsWith(char))) {
+      return true;
+    } else {
+      return false;
+    }
+  };
   return (
-    <nav className={`main-menu ${props.dark ? "dark-menu" : ""}`}>
-      <div
-        className={`header-logo-wrapper`}
-        style={{ top: props.top ? props.top : "0" }}
-      >
+    <nav className={`main-menu ${dark ? "dark-menu" : ""}`}>
+      <div className={`header-logo-wrapper`} style={{ top: top ? top : "0" }}>
         <Image
           src="/icons/logo.png"
           alt="logo"
@@ -33,7 +36,7 @@ export default function Navbar(props) {
         <ul className={`list`} ref={listRef}>
           <li
             className={`list-items home ${
-              router.pathname === "/kontakt" || "/home" ? "current" : ""
+              test(["/", "/kontakt"]) ? "current" : ""
             }`}
           >
             <ul className={`sub-list`}>
@@ -51,9 +54,7 @@ export default function Navbar(props) {
           </li>
           <li
             className={`list-items goodgrades ${
-              router.pathname === "/goodgrades" || "/eksamenspakker"
-                ? "current"
-                : ""
+              test(["/goodgrades", "/eksamenspakker"]) ? "current" : ""
             }`}
           >
             <ul className={`sub-list`}>
@@ -62,11 +63,7 @@ export default function Navbar(props) {
               </li>
             </ul>
           </li>
-          <li
-            className={`list-items app ${
-              router.pathname === "/app" ? "current" : ""
-            }`}
-          >
+          <li className={`list-items app ${test(["/app"]) ? "current" : ""}`}>
             <ul className={`sub-list`}>
               <li className={`sub-list-items`}>
                 <Link href="/app">App</Link>
@@ -75,7 +72,7 @@ export default function Navbar(props) {
           </li>
           <li
             className={`list-items social-club ${
-              router.pathname === "/roadmap" || "/social-club" ? "current" : ""
+              test(["/roadmap", "/social-club"]) ? "current" : ""
             }`}
           >
             <ul className={`sub-list`}>

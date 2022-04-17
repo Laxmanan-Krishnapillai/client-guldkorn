@@ -10,7 +10,7 @@ export default function Faser(props) {
   const router = useRouter();
   return (
     <>
-      <div className={styles.contentWrapper}>
+      <div className={`contentWrapper ${styles.contentWrapper}`}>
         <div className={styles.sliderContainer}>
           {props.swiperData.map((item) => (
             <div className={styles.slide} key={item.id}>

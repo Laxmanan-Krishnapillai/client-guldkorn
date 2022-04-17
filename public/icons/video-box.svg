@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="270" viewBox="0 0 420 270">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        opacity: 0.056;
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-4, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        opacity: 0.496;
+      }
+
+      .cls-5 {
+        opacity: 0.898;
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-7 {
+        fill: #e4eaf8;
+      }
+
+      .cls-8 {
+        filter: url(#Rectangle-5);
+      }
+
+      .cls-9 {
+        filter: url(#Rectangle-4);
+      }
+
+      .cls-10 {
+        filter: url(#Rectangle-2);
+      }
+
+      .cls-11 {
+        filter: url(#Rectangle);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.348" y1="0.16" x2="0.792" y2="0.907" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="Rectangle" x="0" y="0" width="420" height="270" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-color="#000219" flood-opacity="0.055"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle-2" x="0" y="0" width="420" height="270" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur-2"/>
+      <feFlood flood-color="#000219" flood-opacity="0.055"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g class="cls-11" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <rect id="Rectangle-3" data-name="Rectangle" class="cls-1" width="345" height="195" rx="19"/>
+      </g>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="0.03" y1="0.259" x2="0.811" y2="0.865" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#03364c"/>
+    </linearGradient>
+    <filter id="Rectangle-4" x="12" y="9" width="398" height="252" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur-3"/>
+      <feFlood flood-color="#000219" flood-opacity="0.055"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle-5" x="157" y="83" width="106" height="105" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-4"/>
+      <feFlood flood-color="#05173a" flood-opacity="0.263"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-4" x1="-0.048" y1="-0.106" x2="0.779" y2="0.82" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a0bcd4"/>
+      <stop offset="1" stop-color="#283f6c"/>
+    </linearGradient>
+  </defs>
+  <g id="Video_box" data-name="Video box" transform="translate(37.5 37.5)">
+    <g class="cls-10" transform="matrix(1, 0, 0, 1, -37.5, -37.5)">
+      <rect id="Rectangle-6" data-name="Rectangle" class="cls-1" width="345" height="195" rx="19" transform="translate(37.5 37.5)"/>
+    </g>
+    <g id="Video_box-2" data-name="Video box" class="cls-2">
+      <g class="cls-9" transform="matrix(1, 0, 0, 1, -37.5, -37.5)">
+        <rect id="Rectangle-7" data-name="Rectangle" class="cls-3" width="323" height="177" rx="14" transform="translate(49.5 46.5)"/>
+      </g>
+      <g id="play_knap" data-name="play knap" transform="translate(142 68)">
+        <g class="cls-8" transform="matrix(1, 0, 0, 1, -179.5, -105.5)">
+          <rect id="Rectangle-8" data-name="Rectangle" class="cls-4" width="61" height="60" rx="30" transform="translate(179.5 105.5)"/>
+        </g>
+        <circle id="Oval" class="cls-5" cx="24.5" cy="24.5" r="24.5" transform="translate(6 5)"/>
+        <path id="Path" class="cls-6" d="M18.271,9.24,2.069.177A1.4,1.4,0,0,0,0,1.437V19.563a1.4,1.4,0,0,0,2.069,1.26l16.2-9.063A1.453,1.453,0,0,0,18.271,9.24Z" transform="translate(22 19)"/>
+        <path id="Path-2" data-name="Path" class="cls-7" d="M3.693,12.6V1.085L2.069.177A1.4,1.4,0,0,0,0,1.437V19.563a1.4,1.4,0,0,0,2.069,1.26l16.2-9.063A1.426,1.426,0,0,0,19,10.495L6.09,14.433A1.875,1.875,0,0,1,3.693,12.6Z" transform="translate(22 19)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+.buttonWrapper {
+  background-image: url(/icons/video-box-svg);
+  background-origin: content-box;
+  padding: 10px;
+  height: 200px;
+  border-radius: var(--base-br-radius);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+
+.videoWrapper {
+  position: absolute;
+}

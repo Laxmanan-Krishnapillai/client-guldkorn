@@ -59,6 +59,17 @@ a {
   text-decoration: none;
   color: #fff;
 }
+.contentWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 5vh;
+  width: 100vw;
+  border-radius: 0;
+  padding-top: 10vh;
+}
+
 .main-menu {
   width: 100%;
 }
@@ -84,6 +95,8 @@ a {
 .list {
   width: 100%;
   display: flex;
+  padding: 0 5px;
+  justify-content: space-between;
 }
 .sub-list {
   border-radius: inherit;
@@ -94,7 +107,7 @@ a {
 .list-items {
   height: 30px;
   overflow-y: hidden;
-  margin: 0 5px;
+  overflow-x: hidden;
   background-color: #fff;
   box-shadow: var(--base-box-shadow);
   border-radius: var(--base-br-radius);
@@ -103,12 +116,12 @@ a {
   height: 30px;
   display: flex;
   justify-content: center;
-  border-radius: inherit;
   background-color: blue;
 }
 .sub-list-items a {
   padding: 4px 5px;
   font-family: var(--menu-font);
+  border-radius: inherit;
 }
 
 .dark.list {
@@ -179,10 +192,31 @@ a {
     align-items: center;
     width: 100%;
   }
-  .list-wrapper {
-    position: static;
+  .header-logo-wrapper {
+    transform: none;
+    position: relative;
+    left: 0;
   }
   .current {
     order: -1;
+  }
+  .list-wrapper {
+    left: 0;
+    transform: none;
+    width: 70%;
+  }
+  .list {
+    justify-content: end;
+  }
+  .current {
+    order: -1;
+    justify-self: start;
+  }
+  .contentWrapper {
+    width: 90vw;
+    height: 80vh;
+    margin: 10vh 5vw 10vh 5vw;
+    border-radius: 15px;
+    justify-content: space-between;
   }
 }
