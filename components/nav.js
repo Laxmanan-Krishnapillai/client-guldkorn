@@ -9,14 +9,16 @@ export default function Navbar(props) {
     Array.from(listRef.current.querySelectorAll(`li ul li`)).map((el) => {
       if (el.children[0].href.endsWith(router.pathname)) {
         el.classList.add("active");
-        console.log(el.children[0]);
       }
     });
   }, []);
 
   return (
-    <nav className={`main-menu`}>
-      <div className={`header-logo-wrapper`}>
+    <nav className={`main-menu ${props.dark ? "dark-menu" : ""}`}>
+      <div
+        className={`header-logo-wrapper`}
+        style={{ top: props.top ? props.top : "0" }}
+      >
         <Image
           src="/icons/logo.png"
           alt="logo"
@@ -27,7 +29,7 @@ export default function Navbar(props) {
           className={`header-logo-img`}
         />
       </div>
-      <div className={`list-wrapper`} style={{ top: props.top }}>
+      <div className={`list-wrapper`}>
         <ul className={`list`} ref={listRef}>
           <li
             className={`list-items home ${

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Footer from "./footer";
+import Navbar from "./nav";
+import MobileMenu from "./mobile-menu";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "../styles/Faser.module.css";
@@ -18,9 +20,14 @@ export default function Faser(props) {
             </div>
           ))}
           <div className={styles.buttonContainer}>
-            {props.swiperData.map((item) => (
-              <button key={item.title} className={styles.toggleButton}></button>
-            ))}
+            {props.swiperData.length > 1
+              ? props.swiperData.map((item) => (
+                  <button
+                    key={item.title}
+                    className={styles.toggleButton}
+                  ></button>
+                ))
+              : null}
           </div>
         </div>
         <div className={styles.faser}>
@@ -90,8 +97,10 @@ export default function Faser(props) {
             </Link>
           </div>
         </div>
+        <MobileMenu />
+        <Navbar />
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }

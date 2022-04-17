@@ -37,8 +37,7 @@
 
 html,
 body {
-  height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .active {
@@ -64,7 +63,7 @@ a {
   width: 100%;
 }
 .list-wrapper {
-  position: absolute;
+  position: relative;
   background-color: #fff;
   left: 50%;
   transform: translateX(-50%);
@@ -75,9 +74,11 @@ a {
   border-radius: var(--base-br-radius);
 }
 .header-logo-wrapper {
-  max-width: 200px;
+  min-width: 200px;
   margin: 0 auto;
-  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
   z-index: 10;
 }
 .list {

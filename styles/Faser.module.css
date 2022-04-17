@@ -4,8 +4,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 5vh;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(
     135deg,
     rgba(6, 9, 54, 1) 0%,
@@ -15,18 +14,20 @@
     rgba(0, 0, 0, 1) 100%
   );
   padding: 0 10px;
+  gap: 5vh;
   width: 100vw;
-  overflow: hidden;
   border-radius: 0;
+  padding-top: 10vh;
 }
 .faser {
   flex-direction: column;
   width: 100%;
   height: 60%;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 0 auto;
   display: flex;
   justify-content: space-around;
-  align-items: start;
+  align-items: flex-start;
+  gap: 20px;
 }
 .faser > div {
   display: flex;
@@ -37,7 +38,6 @@
   padding: 20px 5px;
   height: 25%;
   width: 100%;
-  margin-bottom: 10px;
 }
 .title,
 .subTitle,
@@ -97,7 +97,7 @@
   justify-content: center;
   border-radius: var(--base-br-radius);
   align-items: center;
-  padding: 0 20px;
+  padding: 10px 20px;
   min-width: 100%;
   background: linear-gradient(
     112deg,
@@ -110,6 +110,7 @@
 .slideSubTitle {
   font-family: var(--header-font);
   text-align: center;
+  margin-bottom: 10px;
 }
 .slideSubTitle {
   font-size: 1rem;

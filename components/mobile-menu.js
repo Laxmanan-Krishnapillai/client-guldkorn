@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useRouter } from "next/router";
 import styles from "../styles/Mobile-menu.module.css";
 import { motion, useAnimation } from "framer-motion";
 export default function MobileMenu(isMobile) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const animation = useAnimation();
-
+  const listRef = useRef();
   const variants = {
     open: { opacity: 1, y: 0 },
     closed: { opacity: 0, y: "-50px" },
@@ -50,11 +50,13 @@ export default function MobileMenu(isMobile) {
       <motion.div
         className={`${styles.menuIcon} ${isMobile ? "" : styles.hidden}`}
         onClick={() => setIsOpen(!isOpen)}
+        initial={false}
         variants={menuIconVariants}
         animate={isOpen ? "open" : "closed"}
       ></motion.div>
       <motion.div
         animate={isOpen ? "open" : "closed"}
+        initial={false}
         variants={containerVariants}
         className={`${styles.container} ${isMobile ? "" : styles.hidden}`}
       >
@@ -63,7 +65,7 @@ export default function MobileMenu(isMobile) {
           type="image/svg+xml"
           data="/icons/stjerner.svg"
         ></object>
-        <div className={styles.menu}>
+        <div className={styles.menu} ref={listRef}>
           {[
             ["Home", "/"],
             ["App", "/app"],
