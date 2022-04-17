@@ -20,6 +20,20 @@ export default function MobileMenu(isMobile) {
         duration: 0.2,
         when: "beforeChildren",
       },
+      transitionEnd: {
+        display: "flex",
+      },
+    },
+    closed: {
+      opacity: 0,
+      transition: {
+        delay: 0.4,
+        duration: 0.2,
+        when: "afterChildren",
+      },
+      transitionEnd: {
+        display: "none",
+      },
     },
   };
 

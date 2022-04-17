@@ -77,6 +77,8 @@ a {
 .header-logo-wrapper {
   max-width: 200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 10;
 }
 .list {
   width: 100%;
@@ -134,7 +136,7 @@ a {
 .active {
   order: -1;
 }
-.home .active {
+.home ul li {
   background: rgb(76, 61, 134);
   background: linear-gradient(
     45deg,
@@ -142,7 +144,7 @@ a {
     rgba(76, 61, 134, 1) 100%
   );
 }
-.app .active {
+.app ul li {
   background: rgb(153, 37, 90);
   background: linear-gradient(
     45deg,
@@ -150,7 +152,7 @@ a {
     rgba(173, 63, 35, 1) 100%
   );
 }
-.goodgrades .active {
+.goodgrades ul li {
   background: rgb(33, 94, 125);
   background: linear-gradient(
     90deg,
@@ -158,7 +160,7 @@ a {
     rgba(37, 64, 123, 1) 100%
   );
 }
-.social-club .active {
+.social-club ul li {
   background: rgb(40, 165, 159);
   background: linear-gradient(
     90deg,
@@ -170,4 +172,16 @@ a {
   height: auto;
 }
 @media screen and (min-width: 746px) {
+  .main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .list-wrapper {
+    position: static;
+  }
+  .current {
+    order: -1;
+  }
 }

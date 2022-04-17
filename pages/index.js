@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <>
       <MobileMenu isMobile={false} />
+      <Navbar top={"80vh"} />
       <Footer />
     </>
   );

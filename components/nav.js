@@ -1,8 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRef, useEffect } from "react";
 import { useRouter } from "next/router";
-export default function Navbar() {
+export default function Navbar(props) {
+  const listRef = useRef();
   const router = useRouter();
+  useEffect(() => {
+    Array.from(listRef.current.querySelectorAll(`li ul li`)).map((el) => {
+      if (el.children[0].href.endsWith(router.pathname)) {
+        el.classList.add("active");
+        console.log(el.children[0]);
+      }
+    });
+  }, []);
+
   return (
     <nav className={`main-menu`}>
       <div className={`header-logo-wrapper`}>
@@ -16,8 +27,8 @@ export default function Navbar() {
           className={`header-logo-img`}
         />
       </div>
-      <div className={`list-wrapper`}>
-        <ul className={`list`}>
+      <div className={`list-wrapper`} style={{ top: props.top }}>
+        <ul className={`list`} ref={listRef}>
           <li
             className={`list-items home ${
               router.pathname === "/kontakt" || "/home" ? "current" : ""
@@ -25,10 +36,14 @@ export default function Navbar() {
           >
             <ul className={`sub-list`}>
               <li className={`sub-list-items`}>
-                <Link href="/kontakt">Kontakt</Link>
+                <Link href="/kontakt">
+                  <a>Kontakt</a>
+                </Link>
               </li>
-              <li className={`sub-list-items active`}>
-                <Link href="/">Home</Link>
+              <li className={`sub-list-items`}>
+                <Link href="/">
+                  <a>Home</a>
+                </Link>
               </li>
             </ul>
           </li>
@@ -43,12 +58,6 @@ export default function Navbar() {
               <li className={`sub-list-items`}>
                 <Link href="/eksamenspakker">Eksamenspakker</Link>
               </li>
-              <li className={`sub-list-items active`}>
-                <Link href="/goodgrades">GoodGrades</Link>
-              </li>
-              <li className={`sub-list-items`}>
-                <Link href="/mentor-premium">Mentor Premium</Link>
-              </li>
             </ul>
           </li>
           <li
@@ -57,7 +66,7 @@ export default function Navbar() {
             }`}
           >
             <ul className={`sub-list`}>
-              <li className={`sub-list-items active`}>
+              <li className={`sub-list-items`}>
                 <Link href="/app">App</Link>
               </li>
             </ul>
