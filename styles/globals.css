@@ -122,6 +122,7 @@ a {
   padding: 4px 5px;
   font-family: var(--menu-font);
   border-radius: inherit;
+  text-shadow: var(--base-text-shadow);
 }
 
 .dark.list {
@@ -218,5 +219,29 @@ a {
     margin: 10vh 5vw 10vh 5vw;
     border-radius: 15px;
     justify-content: space-between;
+    padding-top: 0;
+  }
+  .list-wrapper {
+    padding: 2px;
+  }
+  .list {
+    padding: 0;
+  }
+  .list-items {
+    height: 34px;
+  }
+
+  .sub-list {
+    gap: 10px;
+    padding: 2px;
+  }
+  .sub-list-items {
+    border-radius: var(--base-br-radius);
+  }
+  .sub-list-items a {
+    padding: 4px 10px;
+  }
+  .current {
+    margin-right: auto;
   }
 }
