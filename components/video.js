@@ -1,14 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../styles/Video.module.css";
 export default function Video({ width, height, src }) {
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
+
   return (
     <>
-      <div className={styles.buttonWrapper}>
-        {" "}
+      <div
+        onClick={() => {
+          setActive(!active);
+        }}
+        className={`${styles.buttonWrapper}`}
+      >
         <object data="/icons/play-icon.svg"></object>
       </div>
-      <section className={styles.videoWrapper}>
+      <section className={`${styles.videoWrapper} ${active ? "show" : "hide"}`}>
         <iframe
           width={""}
           height={""}

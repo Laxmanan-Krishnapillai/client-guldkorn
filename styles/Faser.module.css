@@ -91,6 +91,7 @@
   justify-content: center;
   border-radius: var(--base-br-radius);
   align-items: center;
+  scroll-snap-align: center;
   padding: 10px 20px;
   min-width: 100%;
   background: linear-gradient(

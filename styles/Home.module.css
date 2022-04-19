@@ -8,7 +8,22 @@
   line-height: 1.4;
   font-size: 1rem;
 }
-
+.ourCommunity {
+  font-family: var(--header-font);
+  color: #566588;
+  font-size: 0.8rem;
+  position: relative;
+  margin-left: 60px;
+}
+.ourCommunity::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #a4587a;
+  top: 50%;
+  left: -60px;
+}
 .textContainer {
   padding: 10px 5px;
   background: rgb(255, 255, 255);
@@ -22,4 +37,23 @@
 .main {
   display: flex;
   flex-direction: column;
+}
+.contentWrapper {
+  background-image: url(/icons/wrapperbg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--base-br-radius);
+  -webkit-background-origin: border;
+}
+@media only screen and (min-width: 746px) {
+  .main {
+    flex-direction: row;
+  }
+  .title {
+    font-size: 5rem;
+  }
+  .contentWrapper {
+    padding-top: 5vh;
+  }
 }
