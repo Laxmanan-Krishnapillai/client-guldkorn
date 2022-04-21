@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useEffect } from "react";
 import { useRouter } from "next/router";
-export default function Navbar({ dark, top }) {
+export default function Navbar({ dark, top, navCSS }) {
   const listRef = useRef();
   const router = useRouter();
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function Navbar({ dark, top }) {
     }
   };
   return (
-    <nav className={`main-menu ${dark ? "dark-menu" : ""}`}>
+    <nav className={`main-menu ${dark ? "dark-menu" : ""}`} style={navCSS}>
       <div className={`header-logo-wrapper`} style={{ top: top ? top : "0" }}>
         <Image
           src="/icons/logo.png"

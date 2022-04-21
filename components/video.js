@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 import styles from "../styles/Video.module.css";
-export default function Video({ width, height, src }) {
+export default function Video({
+  width,
+  height,
+  src,
+  buttonStyle,
+  button = false,
+  buttonAll = false,
+}) {
   const [active, setActive] = useState(false);
 
   return (
@@ -9,7 +16,14 @@ export default function Video({ width, height, src }) {
         onClick={() => {
           setActive(!active);
         }}
-        className={`${styles.buttonWrapper}`}
+        className={`${styles.buttonWrapper} ${
+          button && buttonAll
+            ? styles.buttonOnly
+            : button
+            ? styles.buttonDesktop
+            : ""
+        }`}
+        style={buttonStyle}
       >
         <object data="/icons/play-icon.svg"></object>
       </div>

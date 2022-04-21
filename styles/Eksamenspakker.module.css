@@ -22,7 +22,7 @@
   height: 30vh;
   margin: 10vh 5% 0 5%;
 }
-.course-element {
+.courseElement {
   width: 30%;
   border-radius: 15px;
   display: flex;
@@ -87,13 +87,13 @@
   grid-area: lection;
 }
 .documents::before {
-  background-image: url(../img/book.svg);
+  background-image: url(/icons/book.svg);
 }
 .clock::before {
-  background-image: url(../img/clock.svg);
+  background-image: url(/icons/clock.svg);
 }
 .lections::before {
-  background-image: url(../img/video-player.svg);
+  background-image: url(/icons/video-player.svg);
 }
 
 .buyButton {
@@ -119,7 +119,29 @@
   border: none;
   outline: none;
 }
-
+.benefits {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.benefitsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.benefitsTitle {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: var(--menu-font);
+}
+.benefitsDescription {
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: var(--menu-font);
+  font-weight: 100;
+}
 .demo {
   color: #313a3f;
   background-color: #5c666b;
@@ -148,7 +170,9 @@
     rgba(212, 73, 97, 0.65) 100%
   );
 }
-
+.benefits {
+  position: absolute;
+}
 @media only screen and (max-width: 400px) {
   .ourCommunity {
     display: none;
@@ -178,5 +202,8 @@
   }
   .contentWrapper {
     justify-content: center !important;
+  }
+  .benefits {
+    position: static;
   }
 }

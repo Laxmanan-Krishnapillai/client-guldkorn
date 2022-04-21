@@ -1,5 +1,4 @@
 import Faser from "../components/faser";
-import Navbar from "../components/nav";
 
 const fase2 = [
   {

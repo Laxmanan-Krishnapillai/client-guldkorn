@@ -2,11 +2,18 @@
   font-family: var(--header-font);
   font-size: 2rem;
 }
-.subTitle {
+.subTitle,
+.button {
   font-family: var(--menu-font);
   font-weight: 100;
   line-height: 1.4;
   font-size: 1rem;
+  color: #6c7598;
+}
+.button {
+  padding: 2px 4px;
+  background-color: white;
+  border-radius: 50px;
 }
 .ourCommunity {
   font-family: var(--header-font);
@@ -33,6 +40,7 @@
     rgba(3, 54, 76, 0.06) 100%
   );
   background-opacity: 0.06;
+  grid-area: text;
 }
 .main {
   display: flex;
@@ -48,12 +56,33 @@
 }
 @media only screen and (min-width: 746px) {
   .main {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 60% 1fr;
+    grid-template-areas:
+      "nav nav"
+      "text ."
+      "video .";
   }
   .title {
     font-size: 5rem;
   }
-  .contentWrapper {
-    padding-top: 5vh;
+  .textContainer {
+    background: none;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .button {
+    background: rgb(160, 188, 212);
+    background: linear-gradient(
+      150deg,
+      rgba(160, 188, 212, 1) 0%,
+      rgba(40, 63, 108, 1) 100%
+    );
+    padding: 8px 30px;
+    color: white;
+    position: relative;
   }
 }

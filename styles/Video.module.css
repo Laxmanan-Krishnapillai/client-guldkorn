@@ -16,3 +16,10 @@
 .videoWrapper {
   position: absolute;
 }
+
+@media screen and (min-width: 746px) {
+  .buttonDesktop {
+    height: 100px;
+    width: 100px;
+  }
+}

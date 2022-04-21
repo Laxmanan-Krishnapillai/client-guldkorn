@@ -186,39 +186,35 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    order: -2;
   }
   .header-logo-wrapper {
     transform: none;
     position: relative;
     left: 0;
+    margin: 0;
   }
   .current {
     order: -1;
+    justify-self: start;
   }
   .list-wrapper {
     left: 0;
     transform: none;
     width: 70%;
-  }
-  .list {
-    justify-content: end;
-  }
-  .current {
-    order: -1;
-    justify-self: start;
+    padding: 2px;
   }
   .contentWrapper {
     width: 90vw;
     height: 80vh;
     margin: 10vh 5vw 10vh 5vw;
     border-radius: 15px;
-    padding-top: 0;
-  }
-  .list-wrapper {
-    padding: 2px;
+    padding: 5vh 5vw;
+    position: static;
   }
   .list {
     padding: 0;
+    justify-content: end;
   }
   .list-items {
     height: 34px;
@@ -238,8 +234,5 @@ a {
   }
   .current {
     margin-right: auto;
-  }
-  .contentWrapper {
-    position: static;
   }
 }
