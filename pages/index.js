@@ -20,9 +20,9 @@ export default function Home() {
               fagligt, socialt og mentalt stærkere individer.
             </h2>
           </div>
-          <Video />
+          <Video button={false} buttonStyle={{ gridArea: "video" }} />
+          <Navbar navCSS={{ gridArea: "nav" }} />
         </section>
-        <Navbar />
         <Footer />
       </div>
     </>

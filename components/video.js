@@ -13,7 +13,7 @@ export default function Video({
   return (
     <>
       <div
-        onClick={() => {
+        onClick={(event) => {
           setActive(!active);
         }}
         className={`${styles.buttonWrapper} ${
