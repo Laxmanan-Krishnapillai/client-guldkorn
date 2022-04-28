@@ -1,6 +1,6 @@
 .title {
   font-family: var(--header-font);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .subTitle,
 .button {
@@ -11,7 +11,7 @@
   color: #6c7598;
 }
 .button {
-  padding: 2px 4px;
+  padding: 4px 8px;
   background-color: white;
   border-radius: 50px;
 }
@@ -66,7 +66,7 @@
     justify-content: center;
   }
   .title {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .textContainer {
     background: none;
@@ -89,8 +89,4 @@
     position: relative;
     top: 20px;
   }
-}
-
-.__next {
-  overflow: hidden;
 }

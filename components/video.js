@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import styles from "../styles/Video.module.css";
 export default function Video({
   width,
@@ -13,9 +14,6 @@ export default function Video({
   return (
     <>
       <div
-        onClick={(event) => {
-          setActive(!active);
-        }}
         className={`${styles.buttonWrapper} ${
           button && buttonAll
             ? styles.buttonOnly
@@ -25,7 +23,18 @@ export default function Video({
         }`}
         style={buttonStyle}
       >
-        <object data="/icons/play-icon.svg"></object>
+        <div
+          onClick={(event) => {
+            setActive(!active);
+          }}
+        >
+          <Image
+            alt={`playIcon`}
+            src={`/icons/play-icon.svg`}
+            width={100}
+            height={100}
+          />
+        </div>
       </div>
       <section className={`${styles.videoWrapper} ${active ? "show" : "hide"}`}>
         <iframe

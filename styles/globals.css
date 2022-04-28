@@ -65,6 +65,7 @@ a {
   width: 100vw;
   border-radius: 0;
   padding-top: 10vh;
+  background: white;
 }
 
 .main-menu {
@@ -180,13 +181,52 @@ a {
     rgba(17, 114, 97, 1) 100%
   );
 }
+
+.decorative-underline {
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 12px;
+  border-radius: 50px;
+  background: blue;
+  top: 130px;
+  transform: translateX(-50%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(3, 54, 76, 0.06) 100%
+  );
+}
+.eksamenspakker-bg-pc {
+  display: none;
+}
+.eksamenspakker-bg {
+  position: absolute;
+  right: -320px;
+  bottom: -525px;
+}
+.fag-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 @media screen and (min-width: 746px) {
+  .eksamenspakker-bg-pc {
+    position: absolute;
+    width: 400px;
+    right: -50px;
+    bottom: -256px;
+  }
   .main-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     order: -2;
+  }
+  .decorative-underline {
+    display: none;
   }
   .header-logo-wrapper {
     transform: none;
@@ -235,4 +275,8 @@ a {
   .current {
     margin-right: auto;
   }
+}
+
+body {
+  overflow: hidden;
 }

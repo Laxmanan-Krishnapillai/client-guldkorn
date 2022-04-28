@@ -4,6 +4,7 @@ import Navbar from "../components/nav";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import Video from "../components/video";
+import FooterPC from "../components/footerPC";
 export default function Home() {
   return (
     <>
@@ -20,11 +21,15 @@ export default function Home() {
               fagligt, socialt og mentalt stærkere individer.
             </h2>
           </div>
-          <Video button={false} buttonStyle={{ gridArea: "video" }} />
+          <Video
+            button={false}
+            buttonStyle={{ gridArea: "video", margin: "auto 0" }}
+          />
           <Navbar navCSS={{ gridArea: "nav" }} />
         </section>
         <Footer />
       </div>
+      <FooterPC />
     </>
   );
 }
