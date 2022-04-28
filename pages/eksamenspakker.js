@@ -59,6 +59,7 @@ export default function Eksamenspakker() {
             navCSS={{
               gridArea: "nav",
               zIndex: "999 !important",
+              zIndex: "200",
             }}
           />
           <Video
@@ -67,7 +68,7 @@ export default function Eksamenspakker() {
               gridArea: "video",
               top: "30px",
               left: "250px",
-              zIndex: "9999",
+              zIndex: "200",
             }}
           />
         </section>
