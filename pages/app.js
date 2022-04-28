@@ -25,8 +25,11 @@ export default function App() {
               <a className={styles.button}>Download</a>
             </Link>
           </div>
-          <Navbar navCSS={{ margin: "2rem 0", gridArea: "nav" }} />
-          <Video button={true} buttonStyle={{ gridArea: "video" }} />
+          <Navbar navCSS={{ gridArea: "nav" }} />
+          <Video
+            button={true}
+            buttonStyle={{ gridArea: "video", top: "-27.5px" }}
+          />
         </section>
         <Footer />
       </div>

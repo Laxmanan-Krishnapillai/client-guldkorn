@@ -33,6 +33,7 @@
 }
 .textContainer {
   padding: 10px 5px;
+  margin: 0 25px;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     150deg,
@@ -70,6 +71,7 @@
   }
   .textContainer {
     background: none;
+    margin: 0;
     margin-top: 10vh;
     display: flex;
     justify-content: space-between;

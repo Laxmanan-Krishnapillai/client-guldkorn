@@ -7,7 +7,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import appcss from "../styles/App.module.css";
 import Video from "../components/video";
-export default function App() {
+export default function Eksamenspakker() {
   return (
     <>
       <div className={`contentWrapper ${styles.contentWrapper}`}>
@@ -28,14 +28,14 @@ export default function App() {
             height={729}
             objectFit={"contain"}
           />
-          <div className="fag-bg">
-            <Image
-              src="/icons/fag.png"
-              alt="fag baggrund"
-              width={435}
-              height={366}
-            />
-          </div>
+        </div>
+        <div className="fag-bg">
+          <Image
+            src="/icons/fag.png"
+            alt="fag baggrund"
+            width={435}
+            height={366}
+          />
         </div>
         <MobileMenu />
         <section className={`${appcss.main} ${styles.main}`}>
@@ -55,10 +55,20 @@ export default function App() {
               </a>
             </Link>
           </div>
-          <Navbar navCSS={{ margin: "2rem 0", gridArea: "nav" }} />
+          <Navbar
+            navCSS={{
+              gridArea: "nav",
+              zIndex: "999 !important",
+            }}
+          />
           <Video
             button={true}
-            buttonStyle={{ gridArea: "video", top: "30px", left: "250px" }}
+            buttonStyle={{
+              gridArea: "video",
+              top: "30px",
+              left: "250px",
+              zIndex: "9999",
+            }}
           />
         </section>
         <Footer />

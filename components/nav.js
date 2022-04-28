@@ -34,7 +34,7 @@ export default function Navbar({ dark, top, navCSS }) {
     <nav className={`main-menu ${dark ? "dark-menu" : ""}`} style={navCSS}>
       <div
         className={`header-logo-wrapper`}
-        style={{ top: top ? top : "0", cursor: "pointer" }}
+        style={{ top: top ? top : "0", cursor: "pointer", zIndex: "9999" }}
       >
         <Link passHref href="/">
           <Image

@@ -68,9 +68,6 @@ a {
   background: white;
 }
 
-.main-menu {
-  width: 100%;
-}
 .list-wrapper {
   position: relative;
   background-color: #fff;
@@ -204,18 +201,24 @@ a {
 .eksamenspakker-bg {
   position: absolute;
   right: -320px;
-  bottom: -525px;
+  bottom: -160px;
+  z-index: 3;
 }
 .fag-bg {
   position: absolute;
   right: 0;
-  bottom: 0;
+  width: 200px;
+  bottom: 100px;
+  z-index: 2;
+}
+.main-menu {
+  margin: 2rem 10px;
 }
 @media screen and (min-width: 746px) {
   .eksamenspakker-bg-pc {
     position: absolute;
     width: 400px;
-    right: -50px;
+    right: 0px;
     bottom: -256px;
   }
   .main-menu {
